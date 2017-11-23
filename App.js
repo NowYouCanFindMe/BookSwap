@@ -1,5 +1,6 @@
 /**
  * Book Swap App
+ * Developed by A&T Students
  */
 
 import React, {Component} from 'react';
