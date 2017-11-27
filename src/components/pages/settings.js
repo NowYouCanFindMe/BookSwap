@@ -17,10 +17,10 @@ render() {
             <ListItem icon>
                 <Left>
                 <Icon name="key"
-                style />
+                 />
                 </Left>
                 <Body>
-                <Text>Locate Me</Text>
+                <Text>Notify Me</Text>
                 </Body>
                 <Right>
                 <Switch value={false} />
@@ -49,7 +49,8 @@ render() {
                 <Icon name="arrow-forward" />
               </Right>
             </ListItem>
-            <ListItem icon>
+            <ListItem icon
+                >
               <Left>
                 <Icon name="bluetooth" />
               </Left>

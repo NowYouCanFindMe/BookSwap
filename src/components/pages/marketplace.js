@@ -16,7 +16,7 @@ export default class MarketPlace extends Component {
           <Card>
             <CardItem>
               <Left>
-                <Thumbnail source={{uri: 'Image URL'}} />
+                <Thumbnail source={require('../../img/bslogo.png')} />
                 <Body>
                   <Text>Book Name</Text>
                   <Text note>John Doe</Text>
@@ -24,7 +24,8 @@ export default class MarketPlace extends Component {
               </Left>
             </CardItem>
             <CardItem cardBody>
-              <Image source={require('/Users/Robert/Documents/GitHub/BookSwapApp/BookSwap/src/img/book_found.png')} style={{height: 200, width: 300, flex: 1}}/>
+              <Image source={require('/Users/Robert/Documents/GitHub/BookSwapApp/BookSwap/src/img/book_found.png')} 
+                style={{height: 100, width: 100, flex: 0, alignItems: 'center'}}/>
             </CardItem>
             <CardItem>
               <Left>
