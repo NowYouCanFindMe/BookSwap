@@ -37,8 +37,8 @@ class LoginPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-     email: 'robertmwaniki@hotmail.com',
-     password: 'password',
+     email: '',
+     password: '',
      error: ''
    };
    this.onLoginPress= this.onLoginPress.bind(this);
@@ -60,7 +60,7 @@ class LoginPage extends Component {
                 firebase.auth().createUserWithEmailAndPassword(email, password)
                     .then(() => { alert("Successfully Created new account") })
                     .catch(() => {
-                       alert('There was a problem') 
+                       alert('User Account is not found.') 
                     });
          });
    }
@@ -76,6 +76,13 @@ class LoginPage extends Component {
    
       <View style = {styles.container}>
            <Text style={styles.title} >BookSwap</Text>
+           <Text style={{
+               color: 'white',
+                alignSelf: 'center',
+                marginTop: 0
+           }}
+           
+           >Developed by NCAT Students</Text>
         <View style={styles.logoContainer}>
                   
            <Image 
@@ -116,7 +123,8 @@ class LoginPage extends Component {
            </TouchableOpacity>
 
            <TouchableOpacity
-                onPress={() => Actions.signup()} 
+                active onPress={Actions.register}
+                
                 style ={styles.buttonContainer} >
                <Text
                 style={styles.buttonText}>SignUp</Text>
@@ -143,6 +151,7 @@ const styles = StyleSheet.create({
     container: {
         padding:20,
         backgroundColor: '#4682B4',
+        flex: 1
     },
     logoContainer:{
         alignItems: 'center',
@@ -166,10 +175,12 @@ const styles = StyleSheet.create({
         color: '#FFFFFF',
         fontWeight: '700'
     },
-    title: {
+     title: {
         alignSelf: 'center',
+        fontWeight: 'bold',
         margin: 40,
-        fontSize: 20,
+        fontSize: 30,
+        color: 'white'
     },
     logo: {
         width:100,

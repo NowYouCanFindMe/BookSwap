@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, Container, Header, Content, Card, CardItem, 
     Thumbnail, Text, Button, Icon, Left, Body, Right,Grid, Col, Row } from 'native-base';
-import {AppRegistry, Image, TextInput, View} from 'react-native';
+import {AppRegistry, Image, TextInput, View, TouchableHighlight} from 'react-native';
 import TextIn from './textInput';
 
 import {Actions} from 'react-native-router-flux';
@@ -75,9 +75,19 @@ export default class Confirmation extends Component {
             }}> Confirmation on Agreement {"\n"} </Text>
             <Body>
             <CardItem cardBody>
-              <Thumbnail source={require('../../img/bookshop.png')} 
-                style={{height: 250, width: 250,
-                }}/>
+
+               <TouchableHighlight active onPress={Actions.home}
+                   
+                     >
+                      <Thumbnail source={require('../../img/completed.png')} 
+                        style={{height: 250, width: 250,
+                       
+                        }}/>
+                </TouchableHighlight>
+
+
+
+            
             </CardItem>
             </Body>
             

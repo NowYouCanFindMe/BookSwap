@@ -52,7 +52,7 @@ export default class Forgot extends Component {
          
            <TouchableOpacity style ={styles.buttonContainer} >
              
-               <Text style={styles.buttonText}>LogIn</Text>
+               <Text style={styles.buttonText}>Submit</Text>
         
            </TouchableOpacity>
 
@@ -65,6 +65,7 @@ const styles = StyleSheet.create({
     container: {
         padding:20,
         backgroundColor: '#4682B4',
+        flex:1
     },
     logoContainer:{
         alignItems: 'center',
@@ -79,9 +80,12 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10
     },
     buttonContainer: {
-        backgroundColor: '#2980b9',
+        // backgroundColor: '#2980b9',
+        backgroundColor: '#1FB18A',
         paddingVertical: 15,
-        margin: 10
+  
+       
+        margin: 0
     },
     buttonText: {
         textAlign: 'center',
@@ -90,12 +94,14 @@ const styles = StyleSheet.create({
     },
     title: {
         alignSelf: 'center',
+        fontWeight: 'bold',
         margin: 40,
-        fontSize: 20,
+        fontSize: 30,
+        color: 'white'
     },
     logo: {
-        width:100,
-        height: 100
+        width:200,
+        height: 200
     },
 });
 

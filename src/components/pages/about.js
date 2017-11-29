@@ -62,25 +62,27 @@ export default class About extends Component {
               </Body>
             </CardItem>
 
-            <CardItem>
-           
-                  <Body>
-                <Button transparent>
+           <CardItem>
+               <Left></Left>
+               <Body>
+                <Button transparent >
                   
-                  <Text>Change Password</Text>
+                  <Text>Edit Password</Text>
                 </Button>
-              </Body>
-             
+                </Body>
+                <Right></Right>
+      
             </CardItem>
 
                <CardItem>
-         
-          
-                <Button transparent style={{justifyContents: 'center',alignItems: 'center'}}>
+               <Left></Left>
+               <Body>
+                <Button  transparent>
                   
-                  <Text>Change School</Text>
+                  <Text>Edit School</Text>
                 </Button>
-            
+                </Body>
+                <Right></Right>
       
             </CardItem>
 
