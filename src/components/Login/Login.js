@@ -124,7 +124,7 @@ class LoginPage extends Component {
             </TouchableOpacity>
 
             <TouchableOpacity
-                onPress={() => Actions.forgot()} 
+                active onPress={Actions.forgot}
                 style ={styles.buttonContainer} >
             <Text
             style={styles.buttonText}>Forgot Password</Text>

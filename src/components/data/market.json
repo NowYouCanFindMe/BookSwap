@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+        "name": "Leanne Graham",
+        "username": "Bret",
+        "email": "lgraham1@aggies.ncat.edu"
+	},
+    {
+		"id": 2,
+        "name": "Jack Mac",
+        "username": "jmac123",
+        "email": "jmac123@aggies.ncat.edu"
+	},
+    	{
+		"id": 3,
+        "name": "Mike Smith",
+        "username": "Bret",
+        "email": "msmith@aggies.ncat.edu"
+	},
+    	{
+		"id": 4,
+        "name": "Susan Thomas",
+        "username": "SThJams",
+        "email": "sthomas@aggies.ncat.edu"
+	}
+]

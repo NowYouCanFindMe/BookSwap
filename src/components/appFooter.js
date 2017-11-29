@@ -10,7 +10,7 @@ export default class AppFooter extends Component {
                 <FooterTab>
                     <Button active onPress={Actions.feed}>
                         <Icon name="egg"/>
-                        <Text>Feed</Text>
+                        <Text>Books</Text>
                     </Button>
                     <Button active onPress={Actions.marketplace} active>
                         <Icon name="paper"/>

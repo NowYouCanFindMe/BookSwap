@@ -7,3 +7,6 @@ Students will start by choosing the university they attend, and then are directe
 
 Programming Languages Used:
 To build our app, we will primarily use JavaScript. We will use the React Native framework to incorporate JavaScript to build our rich mobile UI. To create the backend of our application, we will use Firebase. It is offers free storage and provides OAuth to link our application with Google, Twitter, Facebook and other accounts. To communicate with our Firebase database, we will use Node.js framework. 
+
+
+## Table of Contents

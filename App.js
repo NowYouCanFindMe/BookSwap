@@ -33,10 +33,11 @@ import Feed from './src/components/pages/feed';
 import About from './src/components/pages/about';
 import MarketPlace from './src/components/pages/marketplace';
 import Settings from './src/components/pages/settings';
+import Purchase from './src/components/pages/purchase';
 
+import Confirmation from './src/components/pages/confirmation';
 
-
-
+import PropTypes from 'prop-types';
 
 
 export default class App extends Component<{}> {
@@ -65,10 +66,13 @@ renderScene(route, navigator){
             
             
             />
-            <Scene key="feed" component={Feed} title="Feed"/>
+            <Scene key="feed" component={Feed} title="Books"/>
             <Scene key="about" component={About} title="About" />
             <Scene key="marketplace" component={MarketPlace} title="Market" />
             <Scene key="settings" component={Settings} title="Settings" />
+            <Scene key="purchase" component={Purchase} title="Purchase" />
+            
+            <Scene key="confirmation" component={Confirmation} title="Confirmation" />
             
           </Scene> 
 
